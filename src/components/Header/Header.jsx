@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Header.css"
 
 function Header(props) {
+
+  useEffect(()=>{
+    props.getItems();
+  }, [])
 
   console.log(props.isAdmin);
   return (
