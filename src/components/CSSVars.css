@@ -1,0 +1,11 @@
+:root{
+  --color-a--: rgb(255, 255, 255);
+  --color-a2--: rgb(229, 229, 229);
+  --color-b--: #333;
+}
+
+.logo-text{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+}

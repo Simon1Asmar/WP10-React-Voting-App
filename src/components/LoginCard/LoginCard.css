@@ -1,0 +1,40 @@
+.login-card{
+  /* background-color: var(--color-a2--); */
+
+  padding: 1rem;
+  border: var(--color-b--) 2px solid;
+
+}
+
+.login-card form{
+  min-height: 10em;
+  min-width: 13em;
+}
+
+.login-card input{
+  height: 2rem;
+
+  border: var(--color-b--) 2px solid;
+  border-radius: 0.5rem;
+  padding: 5px;
+}
+
+.login-card button {
+ padding: 0.5em 1em;
+ border: var(--color-b--) 2px solid;
+ border-radius: 0.5rem;
+}
+
+.login-card button:hover{
+  cursor: pointer;
+}
+
+/* .login-card form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  gap: 10px;
+} */
