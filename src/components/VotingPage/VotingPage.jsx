@@ -2,10 +2,10 @@ import React from 'react'
 import "./VotingPage.css"
 
 
-function VotingPage() {
+function VotingPage(props) {
   return (
-    <section className='voting-page'>
-
+    <section className='flex-row-wrap voting-page'>
+      {props.children}
     </section>
   )
 }

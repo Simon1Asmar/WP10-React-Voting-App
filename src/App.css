@@ -31,5 +31,6 @@ body{
 
 .flex-col-wrap,
 .flex-row-wrap{
+  
   flex-wrap: wrap;
 }

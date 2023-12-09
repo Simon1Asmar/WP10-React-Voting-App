@@ -1,7 +1,7 @@
 #header{
   position: fixed;
   top: 0px;
-  min-height: fit-content;
+  min-height: 15vh;
   min-width: 100svw;
 
   gap: 3px;
@@ -9,6 +9,10 @@
 
   padding-bottom: 7px;
   border-bottom: solid var(--color-b--) 1px;
+
+  background-color: var(--color-a--);
+
+  z-index: 10;
 }
 
 a{

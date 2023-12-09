@@ -1,0 +1,41 @@
+.item-card{
+  border: 2px solid var(--color-a--);
+
+  height: max-content;
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  gap: 10px;
+  background-color: var(--color-a--);
+
+  padding: 10px;
+
+  border: solid var(--color-b--) 2px;
+
+  position: relative;
+}
+
+.item-card img{
+  width: 170px;
+  height: 180px;
+  border-radius: 15px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.item-card button{
+  padding: 10px 20px;
+
+  color: var(--color-a--);
+  background-color: var(--color-b--);
+  border: none;
+
+  cursor: pointer;
+}
