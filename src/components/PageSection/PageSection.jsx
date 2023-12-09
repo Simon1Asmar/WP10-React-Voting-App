@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./PageSection.css";
+import axios from "axios";
 
 import LoginCard from "../LoginCard/LoginCard";
 import Header from "../Header/Header";
@@ -24,9 +25,21 @@ function PageSection(props) {
     }
   }, []);
 
+  const getItems = async () => {
+    axios
+      .get("https://65745cd7f941bda3f2afa76c.mockapi.io/votingapp/votingOptions")
+      .then((response) => {
+        console.log(response.data);
+
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }
+
   useEffect(() => {
-    if (userData) {
-      console.log(userData, "USER DATA");
+    if(userData && isLoggedIn){
+      getItems();
     }
   }, [userData]);
 
@@ -56,11 +69,17 @@ function PageSection(props) {
       {!isLoggedIn && <LoginCard logIn={logIn} />}
 
       {isLoggedIn && userData.isAdmin && (
-       <Header logOut={logOut} isAdmin={true}/>
+        <>
+          <Header logOut={logOut} isAdmin={true} />
+          <VotingPage></VotingPage>
+        </>
       )}
 
       {isLoggedIn && !userData.isAdmin && (
-       <Header logOut={logOut} isAdmin={false}/>
+        <>
+          <Header logOut={logOut} isAdmin={false} />
+          <VotingPage></VotingPage>
+        </>
       )}
 
       {props.children}
