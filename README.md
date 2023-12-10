@@ -2,9 +2,14 @@
 
 [Netlify Link](https://visionary-panda-e6dd39.netlify.app)
 
-**Note:** The APIs used in this project are powered by [MockAPI](https://www.mockapi.io/).
+## Table of Contents
+- [User's API](#users-api)
+- [Testing Accounts](#testing-accounts)
+- [VotingOptions API](#votingoptions-api)
+- [How to Run Locally](#how-to-run-locally)
 
 ## User's API
+**Note:** The APIs used in this project are powered by [MockAPI](https://www.mockapi.io/).
 
 The User's API is structured with the following schema:
 
