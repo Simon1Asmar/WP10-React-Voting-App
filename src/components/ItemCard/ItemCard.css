@@ -2,7 +2,7 @@
   border: 2px solid var(--color-a--);
 
   height: max-content;
-  width: 200px;
+  width: 300px;
 
   display: flex;
   flex-direction: column;
@@ -22,8 +22,8 @@
 }
 
 .item-card img{
-  width: 170px;
-  height: 180px;
+  /* width: 170px; */
+  height: 200px;
   border-radius: 15px;
 
   object-fit: cover;
