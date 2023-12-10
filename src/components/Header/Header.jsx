@@ -13,9 +13,14 @@ function Header(props) {
       <h1 className='logo-text'>PRIME</h1>
       <section className='flex-row-wrap'>
 
-        {props.isAdmin && (
-          <a href="#" onClick={()=>{console.log("open admin page")}}>Admin</a>
+        {props.isAdmin && localStorage.currentPage === "votingPage" && (
+          <a href="#" onClick={()=>{props.handleAdminClick()}}>Admin</a>
         )}
+
+        {props.isAdmin && localStorage.currentPage === "adminPage" && (
+          <a href="#" onClick={()=>{props.handleVotePageClick()}}>Vote</a>
+        )}
+
         <a href="#" onClick={()=>{props.logOut()}}>Log Out</a>
       </section>
     </nav>

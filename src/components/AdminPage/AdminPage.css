@@ -1,0 +1,30 @@
+/* AdminPage.css */
+
+.adminPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--color-b--);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid var(--color-b--);
+  overflow-wrap: break-word;
+  word-break: break-all; 
+
+  padding: 20px;
+
+}
+
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
