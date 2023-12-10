@@ -145,12 +145,12 @@ To run this React Voting App on your local machine, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/react-voting-app.git
+   git clone https://github.com/Simon1Asmar/WP10-React-Voting-App.git
    ```
 2. Navigate to the project folder:
 
    ```bash
-   cd react-voting-app
+   cd WP10-React-Voting-App.git
    ```
 
 3. Install dependencies:
