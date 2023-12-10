@@ -130,6 +130,12 @@ function PageSection(props) {
     const updatedVotingOptions = [...votingOptions];
     updatedVotingOptions[optionIndex].numOfVotes--;
 
+    const updatedUserData = {
+      ...userData,
+      voted: false,
+      votedTo: {},
+    };
+
     setVotingOptions(() => {
       return updatedVotingOptions
     });
@@ -156,7 +162,7 @@ function PageSection(props) {
 
       localStorage.setItem("userData", JSON.stringify(updatedUserData));
 
-      console.log('Vote added');
+      console.log('Vote removed');
 
     } catch (error) {
       console.error(error.message);
